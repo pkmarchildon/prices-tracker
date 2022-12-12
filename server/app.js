@@ -3,6 +3,8 @@ import cors from 'cors';
 import morgan from 'morgan';
 import helmet from 'helmet';
 
+import categoriesRouter from './routes/categories.router.js';
+
 const app = express();
 
 /* Middlewares */
@@ -21,5 +23,6 @@ app.use(morgan('combined'));
 app.use(express.json());
 
 /* Routes */
+app.use('/', categoriesRouter);
 
 export default app;
