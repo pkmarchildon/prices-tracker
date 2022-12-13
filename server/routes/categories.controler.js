@@ -38,6 +38,7 @@ export async function httpCreateCategories(req, res) {
   }
 
   itemData.itemId = uuidv4();
+  itemData.price *= 100;
 
   await createItem(category, itemData);
 
