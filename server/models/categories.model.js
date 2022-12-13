@@ -12,6 +12,18 @@ export async function getItems(category) {
   if (category === 'condiments') {
     return await _getItem(condimentsDB);
   }
+
+  if (category === 'fruits') {
+    return await _getItem(fruitsDB);
+  }
+
+  if (category === 'products') {
+    return await _getItem(productsDB);
+  }
+
+  if (category === 'vegetables') {
+    return await _getItem(vegetablesDB);
+  }
 }
 
 export async function createItem(category, newItem) {
@@ -21,6 +33,18 @@ export async function createItem(category, newItem) {
 
   if (category === 'condiments') {
     return await _createItem(condimentsDB, newItem);
+  }
+
+  if (category === 'fruits') {
+    return await _createItem(fruitsDB, newItem);
+  }
+
+  if (category === 'products') {
+    return await _createItem(productsDB, newItem);
+  }
+
+  if (category === 'vegetables') {
+    return await _createItem(vegetablesDB, newItem);
   }
 }
 
@@ -32,6 +56,18 @@ export async function uptadeItem(category, updatedItem) {
   if (category === 'condiments') {
     return await _updateItem(condimentsDB, updatedItem);
   }
+
+  if (category === 'fruits') {
+    return await _updateItem(fruitsDB, updatedItem);
+  }
+
+  if (category === 'products') {
+    return await _updateItem(productsDB, updatedItem);
+  }
+
+  if (category === 'vegetables') {
+    return await _updateItem(vegetablesDB, updatedItem);
+  }
 }
 
 export async function deleteItem(category, itemId) {
@@ -41,6 +77,18 @@ export async function deleteItem(category, itemId) {
 
   if (category === 'condiments') {
     return await _deleteItem(condimentsDB, itemId);
+  }
+
+  if (category === 'fruits') {
+    return await _deleteItem(fruitsDB, itemId);
+  }
+
+  if (category === 'products') {
+    return await _deleteItem(productsDB, itemId);
+  }
+
+  if (category === 'vegetables') {
+    return await _deleteItem(vegetablesDB, itemId);
   }
 }
 
