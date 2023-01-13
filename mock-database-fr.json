@@ -1,0 +1,180 @@
+{
+  "meat": [
+    {
+      "name": "filet de porc",
+      "price": 288,
+      "units": "lb",
+      "lastUpdated": "2023-01-13T00:00:00.000Z",
+      "store": "S/O",
+      "tags": []
+    },
+    {
+      "name": "côtelettes de longe de porc",
+      "price": 299,
+      "units": "lb",
+      "lastUpdated": "2023-01-13T00:00:00.000Z",
+      "store": "S/O",
+      "tags": []
+    },
+    {
+      "name": "veau haché mi-maigre",
+      "price": 299,
+      "units": "lb",
+      "lastUpdated": "2023-01-13T00:00:00.000Z",
+      "store": "S/O",
+      "tags": []
+    },
+    {
+      "name": "côtelettes de veau",
+      "price": 799,
+      "units": "lb",
+      "lastUpdated": "2023-01-13T00:00:00.000Z",
+      "store": "S/O",
+      "tags": []
+    },
+    {
+      "name": "boeuf haché mi-maigre",
+      "price": 299,
+      "units": "lb",
+      "lastUpdated": "2023-01-13T00:00:00.000Z",
+      "store": "S/O",
+      "tags": []
+    },
+    {
+      "name": "poitrine de poulet (sans peau, sans os)",
+      "price": 399,
+      "units": "lb",
+      "lastUpdated": "2023-01-13T00:00:00.000Z",
+      "store": "S/O",
+      "tags": []
+    },
+    {
+      "name": "filet mignon",
+      "price": 1188,
+      "units": "lb",
+      "lastUpdated": "2023-01-13T00:00:00.000Z",
+      "store": "Adonis",
+      "tags": []
+    },
+    {
+      "name": "ribs de porc",
+      "price": 299,
+      "units": "lb",
+      "lastUpdated": "2023-01-13T00:00:00.000Z",
+      "store": "S/O",
+      "tags": []
+    },
+    {
+      "name": "bifteck d’aloyau",
+      "price": 788,
+      "units": "lb",
+      "lastUpdated": "2023-01-13T00:00:00.000Z",
+      "store": "S/O",
+      "tags": ["t-bone"]
+    },
+    {
+      "name": "bifteck de contre-filet",
+      "price": 799,
+      "units": "lb",
+      "lastUpdated": "2023-01-13T00:00:00.000Z",
+      "store": "S/O",
+      "tags": []
+    },
+    {
+      "name": "Bifteck de faux-filet",
+      "price": 788,
+      "units": "lb",
+      "lastUpdated": "2023-01-13T00:00:00.000Z",
+      "store": "S/O",
+      "tags": []
+    }
+  ],
+  "vegetables": [
+    {
+      "name": "poivrons",
+      "price": 199,
+      "units": "lb",
+      "lastUpdated": "2023-01-13T00:00:00.000Z",
+      "store": "S/O",
+      "tags": []
+    },
+    {
+      "name": "champignons",
+      "price": 66,
+      "units": "100g",
+      "lastUpdated": "2023-01-13T00:00:00.000Z",
+      "store": "S/O",
+      "tags": []
+    }
+  ],
+  "fruits": [
+    {
+      "name": "raisins",
+      "price": 97,
+      "units": "lb",
+      "lastUpdated": "2023-01-13T00:00:00.000Z",
+      "store": "S/O",
+      "tags": []
+    },
+    {
+      "name": "fraises",
+      "price": 61,
+      "units": "lb",
+      "lastUpdated": "2023-01-13T00:00:00.000Z",
+      "store": "S/O",
+      "tags": []
+    }
+  ],
+  "condiments": [
+    {
+      "name": "huile d'olive",
+      "price": 400,
+      "units": "L",
+      "lastUpdated": "2023-01-13T00:00:00.000Z",
+      "store": "S/O",
+      "tags": []
+    },
+    {
+      "name": "fromage - tous les jours",
+      "price": 113,
+      "units": "100g",
+      "lastUpdated": "2023-01-13T00:00:00.000Z",
+      "store": "S/O",
+      "tags": []
+    },
+    {
+      "name": "syrop",
+      "price": 113,
+      "units": "100g",
+      "lastUpdated": "2023-01-13T00:00:00.000Z",
+      "store": "S/O",
+      "tags": []
+    },
+    {
+      "name": "beurre",
+      "price": 399,
+      "units": "TBC",
+      "lastUpdated": "2023-01-13T00:00:00.000Z",
+      "store": "S/O",
+      "tags": []
+    }
+  ],
+  "products": [
+    {
+      "name": "papier de toilette",
+      "price": 0.000015,
+      "units": "feuille",
+      "lastUpdated": "2023-01-13T00:00:00.000Z",
+      "store": "S/O",
+      "tags": []
+    },
+    {
+      "name": "mouchoirs - 2 épaisseurs",
+      "price": 0.000048,
+      "units": "feuille",
+      "lastUpdated": "2023-01-13T00:00:00.000Z",
+      "store": "S/O",
+      "tags": []
+    }
+  ]
+}

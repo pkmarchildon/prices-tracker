@@ -1,0 +1,26 @@
+.navbar-container {
+  width: 100%;
+  height: fit-content;
+  box-sizing: border-box;
+}
+
+.navbar-list-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 50px;
+  color: var(--neutral-shade-4);
+}
+
+.navbar-link {
+  color: var(--neutral-shade-4);
+  font-size: 20px;
+}
+
+.navbar-link:hover:not(.navbar-link-active) {
+  color: var(--neutral-shade-6);
+}
+
+.navbar-link-active {
+  color: var(--neutral-shade-7);
+}

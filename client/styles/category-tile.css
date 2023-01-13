@@ -1,0 +1,9 @@
+.categoryTile {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-shade-7);
+  border-radius: 20px;
+}
