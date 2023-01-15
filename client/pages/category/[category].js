@@ -6,7 +6,7 @@ import ProductsPage from '../../components/ProductsPage';
 export default function CategoryPage() {
   const router = useRouter();
   const { category } = router.query;
-  console.log(`category: ${category}`);
+  console.log(category);
 
   return (
     <>
