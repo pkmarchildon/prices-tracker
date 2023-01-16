@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Link from 'next/link';
 
 /* Components */
 import MainPageMenu from '../components/MainPageMenu';

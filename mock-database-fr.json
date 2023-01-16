@@ -162,16 +162,16 @@
   "products": [
     {
       "name": "papier de toilette",
-      "price": 0.000015,
-      "units": "feuille",
+      "price": 15,
+      "units": "100 feuilles",
       "lastUpdated": "2023-01-13T00:00:00.000Z",
       "store": "S/O",
       "tags": []
     },
     {
       "name": "mouchoirs - 2 épaisseurs",
-      "price": 0.000048,
-      "units": "feuille",
+      "price": 48,
+      "units": "100 mouchoirs",
       "lastUpdated": "2023-01-13T00:00:00.000Z",
       "store": "S/O",
       "tags": []

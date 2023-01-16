@@ -1,4 +1,4 @@
-import { isValidCategory, getItems } from './items.js';
+import { isValidCategory, getItems } from './get.js';
 
 test('Verify that the category is valid. Expecting true.', () => {
   expect(isValidCategory('products')).toBe(true);
@@ -24,4 +24,14 @@ test('Get all items from the products category. Should return error.', () => {
   } catch (error) {
     expect(error).toStrictEqual('Category is not valid.');
   }
+});
+
+test('Sending request to the handler.', async () => {
+  const res = await fetch(
+    'http://localhost:3000/api/items/get?category=products'
+  );
+
+  const { items } = await res.json();
+
+  expect(items.length).toBe(2);
 });

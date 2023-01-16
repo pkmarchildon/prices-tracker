@@ -1,16 +1,26 @@
-import { useRouter } from 'next/router';
-
 /* Components */
 import ProductsPage from '../../components/ProductsPage';
 
-export default function CategoryPage() {
-  const router = useRouter();
-  const { category } = router.query;
-  console.log(category);
+export async function getServerSideProps(context) {
+  const { category } = context.query;
+  const res = await fetch(
+    `http://localhost:3000/api/items/get?category=${category}`
+  );
 
+  if (!res.ok) {
+    // This will activate the closest `error.js` Error Boundary
+    throw new Error('Failed to fetch data');
+  }
+
+  const { items } = await res.json();
+
+  return { props: { items } };
+}
+
+export default function CategoryPage({ items }) {
   return (
     <>
-      <ProductsPage />
+      <ProductsPage items={items} />
     </>
   );
 }

@@ -1,16 +1,16 @@
-import database from '../../../mock-database-fr.json';
+import database from '../../../../mock-database-fr.json';
 
 /* Variables */
 const categories = ['meat', 'vegetables', 'fruits', 'condiments', 'products'];
 
 export default function handler(req, res) {
-  if (req.method === 'GET') {
-    try {
-      return getItems(req.body.category);
-    } catch (error) {
-      console.error(error);
-    }
+  try {
+    var items = getItems(req.query.category);
+  } catch (error) {
+    return res.status(404).json({ 'error': 'Invalid category' });
   }
+
+  return res.status(200).json({ items });
 }
 
 export function getItems(category) {

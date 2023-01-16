@@ -2,36 +2,24 @@
 import Navbar from './Navbar';
 import Item from './Item';
 
-async function getData(category) {
-  const res = await fetch('/api/items', {
-    method: 'GET',
-    body: JSON.stringify({ category: category })
+function createArrayOfItems(items) {
+  let arrayOfComponents = [];
+
+  items.forEach((itemData) => {
+    arrayOfComponents.push(<Item key={itemData.name} data={itemData} />);
   });
 
-  // Recommendation: handle errors
-  if (!res.ok) {
-    // This will activate the closest `error.js` Error Boundary
-    throw new Error('Failed to fetch data');
-  }
-
-  return res.json();
+  return arrayOfComponents;
 }
 
-export default function ProductsPage() {
-  //const data = await getData(category);
-  //const items = await data.parseJSON(data);
-
-  //console.log('items: ', items);
+export default function ProductsPage({ items }) {
+  const componentsItems = createArrayOfItems(items);
 
   return (
     <div className='productsPage-container'>
       <Navbar />
       <div className='productsPage-itemsContainer'>
-        <div className='productsPage-itemsGrid'>
-          <Item />
-          <Item />
-          <Item />
-        </div>
+        <div className='productsPage-itemsGrid'>{componentsItems}</div>
       </div>
     </div>
   );
