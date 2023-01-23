@@ -1,14 +1,8 @@
-import Link from 'next/link';
-
 /* Components */
 import ActiveLink from './ActiveLink';
 import ActionButton from './ActionButton';
 
-function buttonClicked() {
-  console.log('click');
-}
-
-export default function Navbar() {
+export default function Navbar({ displayCreateUpdateForm }) {
   return (
     <nav className='navbar-container'>
       <ul className='navbar-list-container'>
@@ -33,7 +27,7 @@ export default function Navbar() {
         </li>
 
         <li>
-          <ActionButton text='ADD ITEM' action={buttonClicked} />
+          <ActionButton text='ADD ITEM' action={displayCreateUpdateForm} />
         </li>
       </ul>
     </nav>

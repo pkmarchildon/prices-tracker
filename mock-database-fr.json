@@ -6,7 +6,7 @@
       "units": "lb",
       "lastUpdated": "2023-01-13T00:00:00.000Z",
       "store": "S/O",
-      "tags": []
+      "tags": ["porc"]
     },
     {
       "name": "côtelettes de longe de porc",
@@ -14,7 +14,15 @@
       "units": "lb",
       "lastUpdated": "2023-01-13T00:00:00.000Z",
       "store": "S/O",
-      "tags": []
+      "tags": ["porc"]
+    },
+    {
+      "name": "côtelettes de porc",
+      "price": 199,
+      "units": "lb",
+      "lastUpdated": "2023-01-21T00:00:00.000Z",
+      "store": "Super C",
+      "tags": ["porc"]
     },
     {
       "name": "veau haché mi-maigre",
@@ -22,7 +30,7 @@
       "units": "lb",
       "lastUpdated": "2023-01-13T00:00:00.000Z",
       "store": "S/O",
-      "tags": []
+      "tags": ["veau", "haché"]
     },
     {
       "name": "côtelettes de veau",
@@ -30,15 +38,15 @@
       "units": "lb",
       "lastUpdated": "2023-01-13T00:00:00.000Z",
       "store": "S/O",
-      "tags": []
+      "tags": ["veau"]
     },
     {
       "name": "boeuf haché mi-maigre",
       "price": 299,
       "units": "lb",
-      "lastUpdated": "2023-01-13T00:00:00.000Z",
-      "store": "S/O",
-      "tags": []
+      "lastUpdated": "2023-01-21T00:00:00.000Z",
+      "store": "Provigo",
+      "tags": ["boeuf", "haché"]
     },
     {
       "name": "poitrine de poulet (sans peau, sans os)",
@@ -46,7 +54,7 @@
       "units": "lb",
       "lastUpdated": "2023-01-13T00:00:00.000Z",
       "store": "S/O",
-      "tags": []
+      "tags": ["poulet", "désossé"]
     },
     {
       "name": "filet mignon",
@@ -54,15 +62,15 @@
       "units": "lb",
       "lastUpdated": "2023-01-13T00:00:00.000Z",
       "store": "Adonis",
-      "tags": []
+      "tags": ["boeuf"]
     },
     {
-      "name": "ribs de porc",
+      "name": "côtes de flanc de porc",
       "price": 299,
       "units": "lb",
-      "lastUpdated": "2023-01-13T00:00:00.000Z",
-      "store": "S/O",
-      "tags": []
+      "lastUpdated": "2023-01-21T00:00:00.000Z",
+      "store": "Provigo",
+      "tags": ["ribs", "porc"]
     },
     {
       "name": "bifteck d’aloyau",
@@ -70,7 +78,7 @@
       "units": "lb",
       "lastUpdated": "2023-01-13T00:00:00.000Z",
       "store": "S/O",
-      "tags": ["t-bone"]
+      "tags": ["t-bone", "boeuf"]
     },
     {
       "name": "bifteck de contre-filet",
@@ -78,15 +86,63 @@
       "units": "lb",
       "lastUpdated": "2023-01-13T00:00:00.000Z",
       "store": "S/O",
-      "tags": []
+      "tags": ["boeuf", "bifteck"]
     },
     {
-      "name": "Bifteck de faux-filet",
-      "price": 788,
+      "name": "pilons de poulet",
+      "price": 199,
       "units": "lb",
-      "lastUpdated": "2023-01-13T00:00:00.000Z",
-      "store": "S/O",
-      "tags": []
+      "lastUpdated": "2023-01-21T00:00:00.000Z",
+      "store": "Provigo",
+      "tags": ["poulet"]
+    },
+    {
+      "name": "hauts de cuisse de poulet",
+      "price": 199,
+      "units": "lb",
+      "lastUpdated": "2023-01-21T00:00:00.000Z",
+      "store": "Provigo",
+      "tags": ["poulet"]
+    },
+    {
+      "name": "filets de tilapia frais ASC",
+      "price": 799,
+      "units": "lb",
+      "lastUpdated": "2023-01-21T00:00:00.000Z",
+      "store": "Provigo",
+      "tags": ["poisson"]
+    },
+    {
+      "name": "filet de saumon",
+      "price": 999,
+      "units": "lb",
+      "lastUpdated": "2023-01-21T00:00:00.000Z",
+      "store": "'Métro'",
+      "tags": ["poisson"]
+    },
+    {
+      "name": "bacon",
+      "price": 106.4,
+      "units": "100g",
+      "lastUpdated": "2023-01-21T00:00:00.000Z",
+      "store": "Super C",
+      "tags": [""]
+    },
+    {
+      "name": "poulet entier",
+      "price": 197,
+      "units": "lb",
+      "lastUpdated": "2023-01-21T00:00:00.000Z",
+      "store": "Super C",
+      "tags": [""]
+    },
+    {
+      "name": "boeuf haché extra-maigre",
+      "price": 388,
+      "units": "lb",
+      "lastUpdated": "2023-01-21T00:00:00.000Z",
+      "store": "Adonis",
+      "tags": ["haché", "boeuf"]
     }
   ],
   "vegetables": [
@@ -105,6 +161,22 @@
       "lastUpdated": "2023-01-13T00:00:00.000Z",
       "store": "S/O",
       "tags": []
+    },
+    {
+      "name": "pommes de terre",
+      "price": 3.99,
+      "units": "l",
+      "lastUpdated": "2023-01-21T00:00:00.000Z",
+      "store": "Provigo",
+      "tags": ["Québec"]
+    },
+    {
+      "name": "patates douces",
+      "price": 9500,
+      "units": "unité",
+      "lastUpdated": "2023-01-21T00:00:00.000Z",
+      "store": "Adonis",
+      "tags": []
     }
   ],
   "fruits": [
@@ -122,6 +194,78 @@
       "units": "lb",
       "lastUpdated": "2023-01-13T00:00:00.000Z",
       "store": "S/O",
+      "tags": []
+    },
+    {
+      "name": "oranges navel",
+      "price": 133,
+      "units": "lb",
+      "lastUpdated": "2023-01-21T00:00:00.000Z",
+      "store": "Provigo",
+      "tags": []
+    },
+    {
+      "name": "pamplemousse",
+      "price": 133,
+      "units": "lb",
+      "lastUpdated": "2023-01-21T00:00:00.000Z",
+      "store": "Provigo",
+      "tags": []
+    },
+    {
+      "name": "clémentines",
+      "price": 123.5,
+      "units": "lb",
+      "lastUpdated": "2023-01-21T00:00:00.000Z",
+      "store": "Métro",
+      "tags": []
+    },
+    {
+      "name": "ananas",
+      "price": 299,
+      "units": "unité",
+      "lastUpdated": "2023-01-21T00:00:00.000Z",
+      "store": "Métro",
+      "tags": []
+    },
+    {
+      "name": "pommes",
+      "price": 29.3,
+      "units": "lb",
+      "lastUpdated": "2023-01-21T00:00:00.000Z",
+      "store": "Métro",
+      "tags": []
+    },
+    {
+      "name": "bleuets",
+      "price": 86.5,
+      "units": "100g",
+      "lastUpdated": "2023-01-21T00:00:00.000Z",
+      "store": "Super C",
+      "tags": []
+    },
+    {
+      "name": "mûres",
+      "price": 86.5,
+      "units": "100g",
+      "lastUpdated": "2023-01-21T00:00:00.000Z",
+      "store": "Super C",
+      "tags": []
+    },
+    {
+      "name": "kiwis",
+      "price": 149.5,
+      "units": "lb",
+      "lastUpdated": "2023-01-21T00:00:00.000Z",
+      "store": "Super C",
+      "tags": []
+    },
+    {
+      "name": "grenades rouges",
+      "price": 166.7,
+      "units": "unité",
+      "lastUpdated": "2023-01-21T00:00:00.000Z",
+      "store": "Adonis",
       "tags": []
     }
   ],
@@ -156,6 +300,78 @@
       "units": "TBC",
       "lastUpdated": "2023-01-13T00:00:00.000Z",
       "store": "S/O",
+      "tags": []
+    },
+    {
+      "name": "mayonnaise",
+      "price": 61.6,
+      "units": "100ml",
+      "lastUpdated": "2023-01-21T00:00:00.000Z",
+      "store": "Provigo",
+      "tags": []
+    },
+    {
+      "name": "bière non alcoolisée",
+      "price": 16,
+      "units": "100ml",
+      "lastUpdated": "2023-01-21T00:00:00.000Z",
+      "store": "Métro",
+      "tags": ["bière", "non alcoolisée"]
+    },
+    {
+      "name": "fromage à la crème - tartinade",
+      "price": 152.9,
+      "units": "100g",
+      "lastUpdated": "2023-01-21T00:00:00.000Z",
+      "store": "IGA",
+      "tags": []
+    },
+    {
+      "name": "beurre arachide",
+      "price": 477,
+      "units": "kg",
+      "lastUpdated": "2023-01-21T00:00:00.000Z",
+      "store": "IGA",
+      "tags": []
+    },
+    {
+      "name": "tartinade de noisettes",
+      "price": 65.8,
+      "units": "100g",
+      "lastUpdated": "2023-01-21T00:00:00.000Z",
+      "store": "IGA",
+      "tags": []
+    },
+    {
+      "name": "jus d'orange",
+      "price": 194,
+      "units": "L",
+      "lastUpdated": "2023-01-21T00:00:00.000Z",
+      "store": "IGA",
+      "tags": []
+    },
+    {
+      "name": "oeufs",
+      "price": 20.3,
+      "units": "oeuf",
+      "lastUpdated": "2023-01-21T00:00:00.000Z",
+      "store": "Super C",
+      "tags": []
+    },
+    {
+      "name": "sauce Classico",
+      "price": 45.7,
+      "units": "100ml",
+      "lastUpdated": "2023-01-21T00:00:00.000Z",
+      "store": "Super C",
+      "tags": []
+    },
+    {
+      "name": "syrop d'érable",
+      "price": 92.4,
+      "units": "100ml",
+      "lastUpdated": "2023-01-21T00:00:00.000Z",
+      "store": "Maxi",
       "tags": []
     }
   ],

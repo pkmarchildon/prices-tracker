@@ -1,0 +1,55 @@
+.createUpdateForm-blur {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(248, 249, 250, 0.2);
+  backdrop-filter: blur(2px);
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.createUpdateForm-container {
+  background-color: var(--background-color);
+  width: fit-content;
+  height: fit-content;
+  box-sizing: border-box;
+  padding: 50px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px var(--neutral-shade-2);
+  border: 1px solid var(--neutral-shade-1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  row-gap: 50px;
+}
+
+.createUpdateForm-buttonsContainer {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+}
+
+.createUpdateForm-cancelButton {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 16px;
+  color: var(--neutral-shade-4);
+
+  transition: all ease-in-out 150ms;
+}
+
+.createUpdateForm-cancelButton:hover {
+  background-color: var(--accent-shade-red-1);
+  border-radius: 5px;
+  color: var(--neutral-shade-5);
+}

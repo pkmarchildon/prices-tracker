@@ -1,6 +1,9 @@
+import { useState } from 'react';
+
 /* Components */
 import Navbar from './Navbar';
 import Item from './Item';
+import CreateUpdateForm from './CreateUpdateForm';
 
 function createArrayOfItems(items) {
   let arrayOfComponents = [];
@@ -13,11 +16,22 @@ function createArrayOfItems(items) {
 }
 
 export default function ProductsPage({ items }) {
+  const [displayCreateUpdateForm, setDisplayCreateUpdateForm] = useState(false);
+
+  function handleDisplayCreateUpdateForm() {
+    setDisplayCreateUpdateForm(!displayCreateUpdateForm);
+  }
+
   const componentsItems = createArrayOfItems(items);
 
   return (
     <div className='productsPage-container'>
-      <Navbar />
+      {displayCreateUpdateForm && (
+        <CreateUpdateForm closeForm={handleDisplayCreateUpdateForm} />
+      )}
+
+      <Navbar displayCreateUpdateForm={handleDisplayCreateUpdateForm} />
+
       <div className='productsPage-itemsContainer'>
         <div className='productsPage-itemsGrid'>{componentsItems}</div>
       </div>
