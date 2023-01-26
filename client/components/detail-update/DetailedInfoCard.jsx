@@ -32,7 +32,11 @@ function createHistory(history) {
   return items;
 }
 
-export default function DetailedInfoCard({ history, closeAction }) {
+export default function DetailedInfoCard({
+  history,
+  closeAction,
+  handleClickItem
+}) {
   return (
     <div className='detailedInfo-container'>
       <svg
@@ -52,9 +56,11 @@ export default function DetailedInfoCard({ history, closeAction }) {
       </svg>
 
       <div className='detailedInfo-buttonsContainer'>
+        {/* Update button */}
         <div
           className='detailedInfo-buttonContainer'
           style={{ color: 'var(--neutral-shade-6)' }}
+          onClick={handleClickItem}
         >
           <svg
             xmlns='http://www.w3.org/2000/svg'
@@ -72,6 +78,8 @@ export default function DetailedInfoCard({ history, closeAction }) {
           </svg>
           <span>Update</span>
         </div>
+
+        {/* Discontinue button */}
         <div
           className='detailedInfo-buttonContainer'
           style={{ color: 'var(--accent-shade-red-5)' }}

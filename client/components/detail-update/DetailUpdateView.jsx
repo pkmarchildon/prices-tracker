@@ -18,6 +18,7 @@ export default function DetailUpdateView({
       <DetailedInfoCard
         history={itemData.history}
         closeAction={closeDetailView}
+        handleClickItem={handleUpdateItem}
       />
     </div>
   );
