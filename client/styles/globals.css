@@ -74,3 +74,11 @@ ul {
   width: 24px;
   height: 24px;
 }
+
+.close-icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  color: var(--neutral-shade-6);
+}

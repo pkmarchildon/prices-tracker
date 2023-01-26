@@ -12,14 +12,22 @@ export default function TextField({ id, label, type, onChange, fieldData }) {
 
   return (
     <fieldset className='field-contaier'>
-      <label id={labelId} htmlFor={inputId} className='field-label field-text'>
+      <label
+        id={labelId}
+        htmlFor={inputId}
+        className={
+          fieldData ? 'field-label fill field-text' : 'field-label field-text'
+        }
+      >
         {label}
       </label>
       <input
         id={inputId}
         name={id}
         type={type}
-        className='field-input field-text'
+        className={
+          fieldData ? 'field-input fill field-text' : 'field-input field-text'
+        }
         onChange={onChange}
         style={{ fontFamily: `${montserrat.style.fontFamily}` }}
         value={fieldData || ''}

@@ -6,7 +6,21 @@
       "units": "lb",
       "lastUpdated": "2023-01-13T00:00:00.000Z",
       "store": "S/O",
-      "tags": ["porc"]
+      "tags": ["porc"],
+      "history": [
+        {
+          "date": "2023-01-13T00:00:00.000Z",
+          "price": 1149,
+          "units": "kg",
+          "store": "Super C"
+        },
+        {
+          "date": "2022-06-24T00:00:00.000Z",
+          "price": 49,
+          "units": "lb",
+          "store": "IGA"
+        }
+      ]
     },
     {
       "name": "côtelettes de longe de porc",
@@ -14,7 +28,8 @@
       "units": "lb",
       "lastUpdated": "2023-01-13T00:00:00.000Z",
       "store": "S/O",
-      "tags": ["porc"]
+      "tags": ["porc"],
+      "history": []
     },
     {
       "name": "côtelettes de porc",
@@ -22,7 +37,8 @@
       "units": "lb",
       "lastUpdated": "2023-01-21T00:00:00.000Z",
       "store": "Super C",
-      "tags": ["porc"]
+      "tags": ["porc"],
+      "history": []
     },
     {
       "name": "veau haché mi-maigre",
@@ -30,7 +46,8 @@
       "units": "lb",
       "lastUpdated": "2023-01-13T00:00:00.000Z",
       "store": "S/O",
-      "tags": ["veau", "haché"]
+      "tags": ["veau", "haché"],
+      "history": []
     },
     {
       "name": "côtelettes de veau",
@@ -38,7 +55,8 @@
       "units": "lb",
       "lastUpdated": "2023-01-13T00:00:00.000Z",
       "store": "S/O",
-      "tags": ["veau"]
+      "tags": ["veau"],
+      "history": []
     },
     {
       "name": "boeuf haché mi-maigre",
@@ -46,7 +64,8 @@
       "units": "lb",
       "lastUpdated": "2023-01-21T00:00:00.000Z",
       "store": "Provigo",
-      "tags": ["boeuf", "haché"]
+      "tags": ["boeuf", "haché"],
+      "history": []
     },
     {
       "name": "poitrine de poulet (sans peau, sans os)",
@@ -54,7 +73,8 @@
       "units": "lb",
       "lastUpdated": "2023-01-13T00:00:00.000Z",
       "store": "S/O",
-      "tags": ["poulet", "désossé"]
+      "tags": ["poulet", "désossé"],
+      "history": []
     },
     {
       "name": "filet mignon",
@@ -62,7 +82,8 @@
       "units": "lb",
       "lastUpdated": "2023-01-13T00:00:00.000Z",
       "store": "Adonis",
-      "tags": ["boeuf"]
+      "tags": ["boeuf"],
+      "history": []
     },
     {
       "name": "côtes de flanc de porc",
@@ -70,7 +91,8 @@
       "units": "lb",
       "lastUpdated": "2023-01-21T00:00:00.000Z",
       "store": "Provigo",
-      "tags": ["ribs", "porc"]
+      "tags": ["ribs", "porc"],
+      "history": []
     },
     {
       "name": "bifteck d’aloyau",
@@ -78,7 +100,8 @@
       "units": "lb",
       "lastUpdated": "2023-01-13T00:00:00.000Z",
       "store": "S/O",
-      "tags": ["t-bone", "boeuf"]
+      "tags": ["t-bone", "boeuf"],
+      "history": []
     },
     {
       "name": "bifteck de contre-filet",
@@ -86,7 +109,8 @@
       "units": "lb",
       "lastUpdated": "2023-01-13T00:00:00.000Z",
       "store": "S/O",
-      "tags": ["boeuf", "bifteck"]
+      "tags": ["boeuf", "bifteck"],
+      "history": []
     },
     {
       "name": "pilons de poulet",
@@ -94,7 +118,8 @@
       "units": "lb",
       "lastUpdated": "2023-01-21T00:00:00.000Z",
       "store": "Provigo",
-      "tags": ["poulet"]
+      "tags": ["poulet"],
+      "history": []
     },
     {
       "name": "hauts de cuisse de poulet",
@@ -102,7 +127,8 @@
       "units": "lb",
       "lastUpdated": "2023-01-21T00:00:00.000Z",
       "store": "Provigo",
-      "tags": ["poulet"]
+      "tags": ["poulet"],
+      "history": []
     },
     {
       "name": "filets de tilapia frais ASC",
@@ -110,7 +136,8 @@
       "units": "lb",
       "lastUpdated": "2023-01-21T00:00:00.000Z",
       "store": "Provigo",
-      "tags": ["poisson"]
+      "tags": ["poisson"],
+      "history": []
     },
     {
       "name": "filet de saumon",
@@ -118,7 +145,8 @@
       "units": "lb",
       "lastUpdated": "2023-01-21T00:00:00.000Z",
       "store": "'Métro'",
-      "tags": ["poisson"]
+      "tags": ["poisson"],
+      "history": []
     },
     {
       "name": "bacon",
@@ -126,7 +154,8 @@
       "units": "100g",
       "lastUpdated": "2023-01-21T00:00:00.000Z",
       "store": "Super C",
-      "tags": [""]
+      "tags": [""],
+      "history": []
     },
     {
       "name": "poulet entier",
@@ -134,7 +163,8 @@
       "units": "lb",
       "lastUpdated": "2023-01-21T00:00:00.000Z",
       "store": "Super C",
-      "tags": [""]
+      "tags": [""],
+      "history": []
     },
     {
       "name": "boeuf haché extra-maigre",
@@ -142,7 +172,8 @@
       "units": "lb",
       "lastUpdated": "2023-01-21T00:00:00.000Z",
       "store": "Adonis",
-      "tags": ["haché", "boeuf"]
+      "tags": ["haché", "boeuf"],
+      "history": []
     }
   ],
   "vegetables": [
@@ -152,7 +183,8 @@
       "units": "lb",
       "lastUpdated": "2023-01-13T00:00:00.000Z",
       "store": "S/O",
-      "tags": []
+      "tags": [],
+      "history": []
     },
     {
       "name": "champignons",
@@ -160,7 +192,8 @@
       "units": "100g",
       "lastUpdated": "2023-01-13T00:00:00.000Z",
       "store": "S/O",
-      "tags": []
+      "tags": [],
+      "history": []
     },
     {
       "name": "pommes de terre",
@@ -168,7 +201,8 @@
       "units": "l",
       "lastUpdated": "2023-01-21T00:00:00.000Z",
       "store": "Provigo",
-      "tags": ["Québec"]
+      "tags": ["Québec"],
+      "history": []
     },
     {
       "name": "patates douces",
@@ -176,7 +210,8 @@
       "units": "unité",
       "lastUpdated": "2023-01-21T00:00:00.000Z",
       "store": "Adonis",
-      "tags": []
+      "tags": [],
+      "history": []
     }
   ],
   "fruits": [
@@ -186,7 +221,8 @@
       "units": "lb",
       "lastUpdated": "2023-01-13T00:00:00.000Z",
       "store": "S/O",
-      "tags": []
+      "tags": [],
+      "history": []
     },
     {
       "name": "fraises",
@@ -194,7 +230,8 @@
       "units": "lb",
       "lastUpdated": "2023-01-13T00:00:00.000Z",
       "store": "S/O",
-      "tags": []
+      "tags": [],
+      "history": []
     },
     {
       "name": "oranges navel",
@@ -202,7 +239,8 @@
       "units": "lb",
       "lastUpdated": "2023-01-21T00:00:00.000Z",
       "store": "Provigo",
-      "tags": []
+      "tags": [],
+      "history": []
     },
     {
       "name": "pamplemousse",
@@ -210,7 +248,8 @@
       "units": "lb",
       "lastUpdated": "2023-01-21T00:00:00.000Z",
       "store": "Provigo",
-      "tags": []
+      "tags": [],
+      "history": []
     },
     {
       "name": "clémentines",
@@ -218,7 +257,8 @@
       "units": "lb",
       "lastUpdated": "2023-01-21T00:00:00.000Z",
       "store": "Métro",
-      "tags": []
+      "tags": [],
+      "history": []
     },
     {
       "name": "ananas",
@@ -226,7 +266,8 @@
       "units": "unité",
       "lastUpdated": "2023-01-21T00:00:00.000Z",
       "store": "Métro",
-      "tags": []
+      "tags": [],
+      "history": []
     },
     {
       "name": "pommes",
@@ -234,7 +275,8 @@
       "units": "lb",
       "lastUpdated": "2023-01-21T00:00:00.000Z",
       "store": "Métro",
-      "tags": []
+      "tags": [],
+      "history": []
     },
     {
       "name": "bleuets",
@@ -242,7 +284,8 @@
       "units": "100g",
       "lastUpdated": "2023-01-21T00:00:00.000Z",
       "store": "Super C",
-      "tags": []
+      "tags": [],
+      "history": []
     },
     {
       "name": "mûres",
@@ -250,7 +293,8 @@
       "units": "100g",
       "lastUpdated": "2023-01-21T00:00:00.000Z",
       "store": "Super C",
-      "tags": []
+      "tags": [],
+      "history": []
     },
     {
       "name": "kiwis",
@@ -258,7 +302,8 @@
       "units": "lb",
       "lastUpdated": "2023-01-21T00:00:00.000Z",
       "store": "Super C",
-      "tags": []
+      "tags": [],
+      "history": []
     },
     {
       "name": "grenades rouges",
@@ -266,7 +311,8 @@
       "units": "unité",
       "lastUpdated": "2023-01-21T00:00:00.000Z",
       "store": "Adonis",
-      "tags": []
+      "tags": [],
+      "history": []
     }
   ],
   "condiments": [
@@ -276,7 +322,8 @@
       "units": "L",
       "lastUpdated": "2023-01-13T00:00:00.000Z",
       "store": "S/O",
-      "tags": []
+      "tags": [],
+      "history": []
     },
     {
       "name": "fromage - tous les jours",
@@ -284,7 +331,8 @@
       "units": "100g",
       "lastUpdated": "2023-01-13T00:00:00.000Z",
       "store": "S/O",
-      "tags": []
+      "tags": [],
+      "history": []
     },
     {
       "name": "syrop",
@@ -292,7 +340,8 @@
       "units": "100g",
       "lastUpdated": "2023-01-13T00:00:00.000Z",
       "store": "S/O",
-      "tags": []
+      "tags": [],
+      "history": []
     },
     {
       "name": "beurre",
@@ -300,7 +349,8 @@
       "units": "TBC",
       "lastUpdated": "2023-01-13T00:00:00.000Z",
       "store": "S/O",
-      "tags": []
+      "tags": [],
+      "history": []
     },
     {
       "name": "mayonnaise",
@@ -308,7 +358,8 @@
       "units": "100ml",
       "lastUpdated": "2023-01-21T00:00:00.000Z",
       "store": "Provigo",
-      "tags": []
+      "tags": [],
+      "history": []
     },
     {
       "name": "bière non alcoolisée",
@@ -316,7 +367,8 @@
       "units": "100ml",
       "lastUpdated": "2023-01-21T00:00:00.000Z",
       "store": "Métro",
-      "tags": ["bière", "non alcoolisée"]
+      "tags": ["bière", "non alcoolisée"],
+      "history": []
     },
     {
       "name": "fromage à la crème - tartinade",
@@ -324,7 +376,8 @@
       "units": "100g",
       "lastUpdated": "2023-01-21T00:00:00.000Z",
       "store": "IGA",
-      "tags": []
+      "tags": [],
+      "history": []
     },
     {
       "name": "beurre arachide",
@@ -332,7 +385,8 @@
       "units": "kg",
       "lastUpdated": "2023-01-21T00:00:00.000Z",
       "store": "IGA",
-      "tags": []
+      "tags": [],
+      "history": []
     },
     {
       "name": "tartinade de noisettes",
@@ -340,7 +394,8 @@
       "units": "100g",
       "lastUpdated": "2023-01-21T00:00:00.000Z",
       "store": "IGA",
-      "tags": []
+      "tags": [],
+      "history": []
     },
     {
       "name": "jus d'orange",
@@ -348,7 +403,8 @@
       "units": "L",
       "lastUpdated": "2023-01-21T00:00:00.000Z",
       "store": "IGA",
-      "tags": []
+      "tags": [],
+      "history": []
     },
     {
       "name": "oeufs",
@@ -356,7 +412,8 @@
       "units": "oeuf",
       "lastUpdated": "2023-01-21T00:00:00.000Z",
       "store": "Super C",
-      "tags": []
+      "tags": [],
+      "history": []
     },
     {
       "name": "sauce Classico",
@@ -364,7 +421,8 @@
       "units": "100ml",
       "lastUpdated": "2023-01-21T00:00:00.000Z",
       "store": "Super C",
-      "tags": []
+      "tags": [],
+      "history": []
     },
     {
       "name": "syrop d'érable",
@@ -372,7 +430,8 @@
       "units": "100ml",
       "lastUpdated": "2023-01-21T00:00:00.000Z",
       "store": "Maxi",
-      "tags": []
+      "tags": [],
+      "history": []
     }
   ],
   "products": [
@@ -382,7 +441,8 @@
       "units": "100 feuilles",
       "lastUpdated": "2023-01-13T00:00:00.000Z",
       "store": "S/O",
-      "tags": []
+      "tags": [],
+      "history": []
     },
     {
       "name": "mouchoirs - 2 épaisseurs",
@@ -390,7 +450,8 @@
       "units": "100 mouchoirs",
       "lastUpdated": "2023-01-13T00:00:00.000Z",
       "store": "S/O",
-      "tags": []
+      "tags": [],
+      "history": []
     }
   ]
 }

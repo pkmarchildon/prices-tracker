@@ -1,15 +1,16 @@
 import { useEffect, useReducer, useState } from 'react';
 import { Montserrat } from '@next/font/google';
+import { centsToDollars } from '../providers/functions';
+
+/* Components */
+import TextField from './form/TextField';
+import OptionsField from './form/OptionsField';
 
 const montserrat = Montserrat({
   style: ['normal', 'italic'],
   subsets: ['latin'],
   fallback: ['Helvetica Neue', 'Helvetica', 'system-ui', 'Arial']
 });
-
-/* Components */
-import TextField from './form/TextField';
-import OptionsField from './form/OptionsField';
 
 const fieldsValues = {
   name: {
@@ -62,42 +63,42 @@ const fieldsValues = {
       }
     ]
   },
-  stores: {
+  store: {
     id: 'store',
     label: 'Store',
     value: '',
     type: 'optionField',
     options: [
       {
-        value: 'adonis',
+        value: 'Adonis',
         label: 'Adonis'
       },
       {
-        value: 'maxi',
+        value: 'Maxi',
         label: 'Maxi'
       },
       {
-        value: 'walmart',
+        value: 'Walmart',
         label: 'Walmart'
       },
       {
-        value: 'superC',
+        value: 'Super C',
         label: 'Super C'
       },
       {
-        value: 'provigo',
+        value: 'Provigo',
         label: 'Provigo'
       },
       {
-        value: 'metro',
+        value: 'Metro',
         label: 'Metro'
       },
       {
-        value: 'iga',
+        value: 'IGA',
         label: 'IGA'
       },
       {
-        value: 'other',
+        value: 'Autre',
         label: 'Autre'
       }
     ]
@@ -110,6 +111,13 @@ const formFields = {
   units: '',
   store: ''
 };
+
+function setFields(itemData) {
+  formFields.name = itemData.name;
+  formFields.price = centsToDollars(itemData.price);
+  formFields.units = itemData.units;
+  formFields.store = itemData.store;
+}
 
 function isFieldEmpty(content, labelElement, inputElement) {
   if (content) {
@@ -189,6 +197,7 @@ function createFields(
           label={fieldsValues[key].label}
           options={fieldsValues[key].options}
           handleChange={handleChangeOptionInput}
+          fieldData={formData[key]}
         />
       );
     }
@@ -221,7 +230,9 @@ function formDataFormating(event) {
   };
 }
 
-export default function CreateUpdateForm({ closeForm }) {
+export default function CreateUpdateForm({ closeForm, itemData }) {
+  setFields(itemData);
+
   const [formData, setFormData] = useReducer(formReducer, formFields);
   const [submitting, setSubmitting] = useState(false);
 

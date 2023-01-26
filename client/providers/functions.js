@@ -69,3 +69,11 @@ export function dateFormatter(dateString) {
 
   return `${day} ${month} ${year}`;
 }
+
+export function centsToDollars(amountInCents) {
+  return amountInCents / 100;
+}
+
+export function dollarsToCents(amountInDollars) {
+  return amountInDollars * 100;
+}

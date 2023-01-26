@@ -25,7 +25,7 @@
 
 .field-label.active {
   top: -20%;
-  color: var(--primary-shade-3);
+  color: var(--primary-shade-3) !important;
   font-size: 0.8em;
 
   transition: all ease-in-out 150ms;
@@ -35,7 +35,7 @@
   height: var(--input-height);
   width: var(--input-width);
   background-color: var(--neutral-shade-2);
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   border-radius: var(--input-borderRadius);
   box-sizing: border-box;
   padding-left: 10px;
@@ -58,7 +58,12 @@
   border: 1px solid var(--neutral-shade-2);
 }
 
-.field-label-fill {
+.field-input.fill {
+  background-color: transparent;
+  border-color: var(--neutral-shade-2);
+}
+
+.field-label.fill {
   top: -20%;
   color: var(--neutral-shade-5);
   font-size: 0.8em;

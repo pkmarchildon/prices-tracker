@@ -1,0 +1,65 @@
+:root {
+  --padding-historyContainer: 20px;
+}
+
+.detailedInfo-container {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 10px;
+  background-color: var(--neutral-shade-1);
+  box-shadow: 0px 4px 4px var(--neutral-shade-2);
+  box-sizing: border-box;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+}
+
+.detailedInfo-buttonsContainer {
+  background-color: var(--background-color);
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 50px;
+  width: fit-content;
+  height: fit-content;
+}
+
+.detailedInfo-buttonContainer {
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
+  column-gap: 16px;
+  cursor: pointer;
+}
+
+.detailedInfo-historyContainer {
+  width: fit-content;
+  height: fit-content;
+  background-color: var(--background-color);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding-top: var(--padding-historyContainer);
+  padding-bottom: var(--padding-historyContainer);
+  row-gap: var(--padding-historyContainer);
+}
+
+.detailedInfo-infoContainer {
+  display: flex;
+  column-gap: 20px;
+  margin-right: var(--padding-historyContainer);
+  margin-left: var(--padding-historyContainer);
+}
+
+.detailedInfo-divider {
+  border-top: 1px solid var(--neutral-shade-2);
+  width: 100%;
+}

@@ -15,6 +15,7 @@ import '../styles/item.css';
 import '../styles/products-page.css';
 import '../styles/create-update-form.css';
 import '../styles/form-components.css';
+import '../styles/detailed-info-card.css';
 
 const montserrat = Montserrat({
   style: ['normal', 'italic'],

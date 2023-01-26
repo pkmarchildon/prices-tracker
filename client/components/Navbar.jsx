@@ -2,7 +2,7 @@
 import ActiveLink from './ActiveLink';
 import ActionButton from './ActionButton';
 
-export default function Navbar({ displayCreateUpdateForm }) {
+export default function Navbar({ displayCreateForm }) {
   return (
     <nav className='navbar-container'>
       <ul className='navbar-list-container'>
@@ -27,7 +27,7 @@ export default function Navbar({ displayCreateUpdateForm }) {
         </li>
 
         <li>
-          <ActionButton text='ADD ITEM' action={displayCreateUpdateForm} />
+          <ActionButton text='ADD ITEM' action={displayCreateForm} />
         </li>
       </ul>
     </nav>

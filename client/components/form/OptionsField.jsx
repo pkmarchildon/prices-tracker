@@ -21,8 +21,15 @@ function createOptions(options) {
   return fields;
 }
 
-export default function OptionsField({ id, label, options, handleChange }) {
+export default function OptionsField({
+  id,
+  label,
+  options,
+  handleChange,
+  fieldData
+}) {
   const inputId = `${id}-input`;
+  console.log(fieldData);
 
   return (
     <fieldset className='field-contaier'>
@@ -30,21 +37,27 @@ export default function OptionsField({ id, label, options, handleChange }) {
         name={id}
         id={inputId}
         onChange={handleChange}
-        className='field-input field-text'
+        className={
+          fieldData ? 'field-input fill field-text' : 'field-input field-text'
+        }
         style={{
           fontFamily: `${montserrat.style.fontFamily}`,
           cursor: 'pointer'
         }}
         required={true}
+        value={fieldData || ''}
       >
-        <option
-          id={`${id}-emptyOption`}
-          name={`${id}-emptyOption`}
-          value=''
-          className='field-text'
-        >
-          {label}
-        </option>
+        {!fieldData && (
+          <option
+            id={`${id}-emptyOption`}
+            name={`${id}-emptyOption`}
+            value=''
+            className='field-text'
+          >
+            {label}
+          </option>
+        )}
+
         {createOptions(options)}
       </select>
     </fieldset>

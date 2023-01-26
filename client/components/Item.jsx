@@ -14,11 +14,11 @@ function formatData(data) {
   return { name, price, units, lastUpdated, store };
 }
 
-export default function Item({ data }) {
+export default function Item({ data, handleClickItem }) {
   const { name, price, units, lastUpdated, store } = formatData(data);
 
   return (
-    <div className='item-container'>
+    <div className='item-container' onClick={() => handleClickItem(data)}>
       <span
         id='name'
         className='item-element-container item-element-primaryColor'

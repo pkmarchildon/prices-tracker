@@ -4,36 +4,74 @@ import { useState } from 'react';
 import Navbar from './Navbar';
 import Item from './Item';
 import CreateUpdateForm from './CreateUpdateForm';
+import DetailUpdateView from './detail-update/DetailUpdateView';
 
-function createArrayOfItems(items) {
+function createArrayOfItems(items, handleClickItem) {
   let arrayOfComponents = [];
 
   items.forEach((itemData) => {
-    arrayOfComponents.push(<Item key={itemData.name} data={itemData} />);
+    arrayOfComponents.push(
+      <Item
+        key={itemData.name}
+        data={itemData}
+        handleClickItem={handleClickItem}
+      />
+    );
   });
 
   return arrayOfComponents;
 }
 
 export default function ProductsPage({ items }) {
-  const [displayCreateUpdateForm, setDisplayCreateUpdateForm] = useState(false);
+  const [displayCreateForm, setDisplayCreateForm] = useState(false);
+  const [displayUpdateForm, setDisplayUpdateForm] = useState(false);
+  const [displayMoreInfo, setDisplayMoreInfo] = useState(false);
+  const [itemData, setItemData] = useState([]);
 
-  function handleDisplayCreateUpdateForm() {
-    setDisplayCreateUpdateForm(!displayCreateUpdateForm);
+  function handleDisplayMoreInfo(itemData) {
+    // Set item data
+    setItemData(itemData);
+
+    setDisplayMoreInfo(!displayMoreInfo);
   }
 
-  const componentsItems = createArrayOfItems(items);
+  function closeDetailView() {
+    setItemData({});
+    setDisplayMoreInfo(!displayMoreInfo);
+  }
+
+  function handleCreateItem() {
+    setDisplayCreateForm(!displayCreateForm);
+  }
+
+  function handleUpdateItem() {
+    setDisplayUpdateForm(!displayUpdateForm);
+  }
+
+  const componentsItems = createArrayOfItems(items, handleDisplayMoreInfo);
 
   return (
     <div className='productsPage-container'>
-      {displayCreateUpdateForm && (
-        <CreateUpdateForm closeForm={handleDisplayCreateUpdateForm} />
+      {displayCreateForm && (
+        <CreateUpdateForm closeForm={handleCreateItem} itemData={{}} />
       )}
 
-      <Navbar displayCreateUpdateForm={handleDisplayCreateUpdateForm} />
+      {displayUpdateForm && (
+        <CreateUpdateForm closeForm={handleUpdateItem} itemData={itemData} />
+      )}
+
+      <Navbar displayCreateForm={handleCreateItem} />
 
       <div className='productsPage-itemsContainer'>
-        <div className='productsPage-itemsGrid'>{componentsItems}</div>
+        {displayMoreInfo ? (
+          <DetailUpdateView
+            itemData={itemData}
+            handleUpdateItem={handleUpdateItem}
+            closeDetailView={closeDetailView}
+          />
+        ) : (
+          <div className='productsPage-itemsGrid'>{componentsItems}</div>
+        )}
       </div>
     </div>
   );

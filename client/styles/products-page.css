@@ -2,6 +2,9 @@
   width: 100%;
   height: fit-content;
   box-sizing: border-box;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
 }
 
 .productsPage-itemsContainer {
@@ -9,9 +12,6 @@
   height: 100%;
   box-sizing: border-box;
   margin-top: 100px;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-bottom: 50px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -21,4 +21,18 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 75px;
+}
+
+.productsPage-info-container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 250px;
+}
+#left {
+  width: 350px;
+  height: 100px;
+  background-color: aqua;
 }
