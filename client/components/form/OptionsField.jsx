@@ -29,7 +29,6 @@ export default function OptionsField({
   fieldData
 }) {
   const inputId = `${id}-input`;
-  console.log(fieldData);
 
   return (
     <fieldset className='field-contaier'>

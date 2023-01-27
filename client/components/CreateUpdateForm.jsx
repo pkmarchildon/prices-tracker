@@ -215,14 +215,6 @@ function formReducer(state, event) {
   };
 }
 
-function removeEmptyOptionElement(name) {
-  const emptyOptionElement = document.getElementById(`${name}-emptyOption`);
-
-  if (emptyOptionElement) {
-    emptyOptionElement.remove();
-  }
-}
-
 function formDataFormating(event) {
   return {
     name: event.target.name,
@@ -236,10 +228,18 @@ export default function CreateUpdateForm({ closeForm, itemData }) {
   const [formData, setFormData] = useReducer(formReducer, formFields);
   const [submitting, setSubmitting] = useState(false);
 
-  const handleSubmit = (event) => {
-    Object.entries(formData).map(([name, value]) =>
-      console.log(`name: ${name} - value: ${value}`)
-    );
+  const handleSubmit = async (event) => {
+    if (itemData) {
+      const res = await fetch('http://localhost:3000/api/items/post', {
+        method: 'PUT',
+        body: JSON.stringify({ newItem: formData })
+      });
+    } else {
+      const res = await fetch('http://localhost:3000/api/items/post', {
+        method: 'POST',
+        body: JSON.stringify({ newItem: formData })
+      });
+    }
 
     event.preventDefault();
     setSubmitting(true);
@@ -263,8 +263,6 @@ export default function CreateUpdateForm({ closeForm, itemData }) {
     }
 
     setFormData(formDataFormating(event));
-
-    removeEmptyOptionElement(event.target.name);
   };
 
   const fields = createFields(
@@ -279,7 +277,11 @@ export default function CreateUpdateForm({ closeForm, itemData }) {
 
   return (
     <div className='createUpdateForm-blur'>
-      <form className='createUpdateForm-container' onSubmit={handleSubmit}>
+      <form
+        className='createUpdateForm-container'
+        onSubmit={handleSubmit}
+        method='post'
+      >
         {fields}
 
         <div className='createUpdateForm-buttonsContainer'>
